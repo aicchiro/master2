@@ -1,0 +1,118 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="CSS.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <title>BastketBall | Home Page</title>
+    <style>
+            .carousel {
+      position: relative;
+      max-width: 600px;
+      margin: 50px auto;
+      overflow: hidden;
+      border-radius: 10px;
+    }
+
+    .slides {
+      display: flex;
+      transition: transform 0.5s ease-in-out;
+    }
+
+    .slides img {
+      width: 100%;
+      flex-shrink: 0;
+    }
+
+    .nav-button {
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      font-size: 2rem;
+      background-color: rgba(0,0,0,0.5);
+      color: white;
+      border: none;
+      padding: 10px;
+      cursor: pointer;
+    }
+
+    .prev { left: 10px; }
+    .next { right: 10px; }
+    </style>
+    
+</head>
+<body>
+  <body>
+<header>
+        <div class="header">
+    <div class="logo">
+        <a href="Home.html">
+        <img class="blackhead"  src="images/NBA.jpg">
+        </a>
+    </div>
+    <div class="login-container">
+        <span class="School">Nanyang Poly Singapore</span>
+        <a class="login-button" href="signup.html">Sign up</a>
+    </div>
+</div>
+    </header>
+<body>
+ 
+    <div class="carousel">
+  <div class="slides" id="slides">
+    <img src="images/lebron1st champ.jpg" alt="Slide 1">
+    <img src="images/lebron 2nd champ.jpg" alt="Slide 2">
+    <img src="images/lebron3rd champ.jpg" alt="Slide 3">
+    <img src="images/lebron4th champ.jpg" alt="Slide 3">
+  </div>
+  <button class="nav-button prev" onclick="moveSlide(-1)">❮</button>
+  <button class="nav-button next" onclick="moveSlide(1)">❯</button>
+</div>
+    <nav>
+        <a  href="Home.html">
+            Home
+        </a>
+        <a  href="timetable.html">
+            Timetable</a>
+
+        <a  href="achievements.html">
+            Achievements
+        </a>
+        <a class='current' href="leaders.html">
+            Our Leaders
+        </a>
+        <a href="Contact Us.html">
+            Place holder
+        </a>
+    </nav>
+<button onclick="topFunction()" id="myBtn" title="Go to top">&#8593;</button>
+<script>
+let mybutton = document.getElementById("myBtn");
+
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+    mybutton.style.display = "block";
+  } else {
+    mybutton.style.display = "none";
+  }
+}
+function topFunction() {
+  document.body.scrollTop = 0;
+  document.documentElement.scrollTop = 0;
+}
+
+let slideIndex = 0;
+  const slides = document.getElementById('slides');
+  const totalSlides = slides.children.length;
+
+  function moveSlide(direction) {
+    slideIndex = (slideIndex + direction + totalSlides) % totalSlides;
+    slides.style.transform = `translateX(-${slideIndex * 100}%)`;
+  }
+</script>
+</body>
+</html>
