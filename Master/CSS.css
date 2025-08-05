@@ -173,7 +173,6 @@ color: white;
 
 .content-section {
     background-color: white;
-
     text-align: center;
 }
 
@@ -241,10 +240,15 @@ footer {
   box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
 }
 .image-item h3 {
-  width: 100%;
   padding: 5%; 
+  color: #000000;
+}
+.image-item p  {
+  width: 100%;
+  padding-left: 5%; 
+  padding-bottom: 8px;
   height: auto;
-  border-radius: 15px;
+  color: #333;
 }
 
 .image-item img {
