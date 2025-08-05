@@ -221,3 +221,24 @@ footer {
 #myBtn:hover {
   background-color: #555;
 }
+
+.image-row {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  width: 80%;
+  margin: 0 auto;
+  gap: 20px;
+}
+
+.image-item {
+  flex: 1;
+  max-width: 26%;
+  text-align: center;
+}
+
+.image-item img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
