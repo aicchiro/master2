@@ -11,7 +11,7 @@
   <link href="signupcss.css" rel="stylesheet">
 
 </head>
-<header>
+<header class="scroll-animate">
   <div class="header">
     <div class="logo">
       <a href="Home.html">
@@ -30,7 +30,7 @@
 
 
   <!-- Signup Form -->
-  <div class="container mt-5">
+  <div class="container mt-5 scroll-animate">
     <h2 class="center">Join the Basketball CCA</h2>
     <br>
     <div id="pendingList" class="mb-3">
@@ -180,6 +180,16 @@
 
     form.reset();
   });
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add('show');
+      }
+    });
+  }, { threshold: 0.2 });
+
+  document.querySelectorAll('.scroll-animate').forEach(el => observer.observe(el));
+</script>
 </script>
 </body>
 
