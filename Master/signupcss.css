@@ -1,9 +1,9 @@
 .container {
-  width: 50%;
-  padding-right: 12px;
-  padding-left: 12px;
-  margin-right: auto;
-  margin-left: auto;
+  max-width: 480px;        /* limit width for easier reading */
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);  /* soft shadow */
+  background-color: #fff;  /* white background for contrast */
+  padding: 2rem 2rem 3rem 2rem; /* more padding for breathing room */
+  border-radius: 10px;
 }
 
 .mt-5 {
