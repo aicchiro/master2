@@ -197,15 +197,12 @@ color: white;
 
 .fontcolor2{
 	position: relative;
-	width: 32%;
-        z-index: 999;
-	padding: 3px;
+	padding: 6px;
 	text-align: left;
 	color: white;
 	display: inline-block;
 	background-color: #333;
 	text-decoration: none;
-	font-size: 91%;	
 	border: #333 solid 1px;
     transition: 0.2s;
 }
@@ -477,12 +474,12 @@ footer {
     color: inherit; /* Keeps original text color */
 }
         /* Scroll animation styles */
-        .scroll-animate {
+        .animate {
             opacity: 0;
             transform: translateY(30px);
             transition: all 0.6s ease-out;
         }
-        .scroll-animate.show {
+        .animate.show {
             opacity: 1;
             transform: translateY(0);
         }
