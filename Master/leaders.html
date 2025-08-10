@@ -284,40 +284,7 @@
   </div>
   <br><br><br>
   <button onclick="topFunction()" id="myBtn" title="Go to top">&#8593;</button>
-  <script src="script.js">
-    const images = document.querySelectorAll(".carousel img");
-    const description = document.getElementById("description");
-
-    const descriptions = [
-      // Player 1
-      "This is LeBron Tan, captain of the NYP Titans from 2022–2024. Known for his leadership under pressure, he led the team to three consecutive POL-ITE Championships. His drive, work ethic, and ability to rally the team made him the heartbeat of our dynasty run.",
-
-      // Player 2
-      "This is Anthony Davis Lim, our defensive anchor and shot-blocking specialist. His versatility allowed him to guard any position, and his clutch defensive stops during the 2023 finals were pivotal to securing back-to-back titles for NYP.",
-
-      // Player 3
-      "This is Luka Ong, our offensive maestro and playmaking genius. With unmatched vision and deadly 3-point shooting, he controlled the pace of the game and delivered decisive assists that turned close matches into comfortable victories."
-    ];
-
-    let currentIndex = 0;
-
-    function showSlide(index) {
-      images.forEach((img, i) => {
-        img.classList.toggle("active", i === index);
-      });
-
-      description.classList.add("fade-out");
-      setTimeout(() => {
-        description.textContent = descriptions[index];
-        description.classList.remove("fade-out");
-      }, 500);
-    }
-
-    function changeSlide(direction) {
-      currentIndex = (currentIndex + direction + images.length) % images.length;
-      showSlide(currentIndex);
-    }
-  </script>
+  <script src="script.js"></script>
   <nav>
     <a href="Home.html">Home</a>
     <a href="timetable.html">Trainings</a>
