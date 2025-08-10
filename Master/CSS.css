@@ -247,8 +247,8 @@ footer {
   font-size: 18px;
   border: none;
   outline: none;
-  background-color: rgb(255, 0, 0);
-  color: rgb(228, 217, 217);
+  background-color: rgb(255, 50, 50);
+  color: white;
   cursor: pointer;
   width: 20;
   padding: 15px;
@@ -377,11 +377,10 @@ footer {
       .section-title {
             font-size: 2.5rem;
             font-weight: 700;
-            color: #2c3e50;
+            color: black;
             text-align: center;
             margin-bottom: 2rem;
             position: relative;
-            margin-left: 20px;
         }
 
         .section-title::after {
@@ -392,10 +391,10 @@ footer {
             transform: translateX(-50%);
             width: 80px;
             height: 4px;
-            background: linear-gradient(45deg, #ff6b6b, #ee5a24);
+            background: linear-gradient(45deg, rgb(255, 50, 50), rgb(235, 20, 20));
             border-radius: 2px;
-            margin-left: 20px;
         }
+
        .description-content {
             display: grid;
             grid-template-columns: 1fr 1fr;
