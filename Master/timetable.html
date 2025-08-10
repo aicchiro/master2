@@ -1,57 +1,72 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="CSS.css" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
     <title>BastketBall | Timetable</title>
     <style>
-    .timetable {
-      display: grid;
-      grid-template-columns: 100px repeat(5, 1fr);
-      gap: 1px;
-      background-color: #8f2828;
-      border-radius: 10px;
-      overflow: hidden;
-      border: 2px solid gray;
-    width: 95%;
-    margin-left: 2.5%;
-    }
+        .timetable {
+            display: grid;
+            grid-template-columns: 100px repeat(5, 1fr);
+            gap: 1px;
+            background-color: #8f2828;
+            border-radius: 10px;
+            overflow: hidden;
+            border: 2px solid gray;
+            width: 95%;
+            margin-left: 2.5%;
+        }
 
-    .cell {
-      background: #ffffff;
-      padding: 20px;
-      text-align: center;
-    }
+        .cell {
+            background: #ffffff;
+            padding: 20px;
+            text-align: center;
+        }
 
-    .time {
-      background: #f0f0f0;
-      font-weight: bold;
-    }
+        .time {
+            background: #f0f0f0;
+            font-weight: bold;
+        }
 
-    .today {
-      background: #78bdfa;
-    }
+        .today {
+            background: #78bdfa;
+        }
 
-    .subject {
-      font-size: 14px;
-      padding: 10px;
-      border-radius: 8px;
-      background: #e6f2ff;
-    }
+        .subject {
+            font-size: 14px;
+            padding: 10px;
+            border-radius: 8px;
+            background: #e6f2ff;
+        }
 
-    .subject.train { background: #fde2e2; }
-    .subject.friendly { background: #e2f0cb; }
-    .subject.intersch { background: #ffe3b3; }
-    .subject.rest { background: #e2e4ff; }
-    .subject.warmup {background: rgb(247, 184, 184);}
-    
-  </style>
+        .subject.train {
+            background: #fde2e2;
+        }
+
+        .subject.friendly {
+            background: #e2f0cb;
+        }
+
+        .subject.intersch {
+            background: #ffe3b3;
+        }
+
+        .subject.rest {
+            background: #e2e4ff;
+        }
+
+        .subject.warmup {
+            background: rgb(247, 184, 184);
+        }
+    </style>
 
 </head>
+
 <body>
-<header>
+    <header>
         <div class="header animate">
             <div class="logo">
                 <a href="Home.html">
@@ -60,169 +75,230 @@
             </div>
             <div class="login-container">
                 <span class="School">Nanyang Poly Singapore</span>
-                <a class="login-button" href="signup.html"><i class="fas fa-sign-in-alt"></i>  Sign up</a>
+                <a class="login-button" href="signup.html"><i class="fas fa-sign-in-alt"></i> Sign up</a>
             </div>
         </div>
         <div class="line"></div>
     </header>
-<body>
 
-    <br><br><br><br>
-  <h2 class="section-title">Weekly CCA Timetable</h2>
-  <br>
-  <div class="timetable">
-    <div class="cell time">Time</div>
-    <div class="cell header">Mon</div>
-    <div class="cell header today">Tue</div>
-    <div class="cell header">Wed</div>
-    <div class="cell header">Thu</div>
-    <div class="cell header">Fri</div>
+    <body>
 
-    <div class="cell time">3:00 - 4:00</div>
-    <div class="cell"><div class="subject warmup">warmup</div></div>
-    <div class="cell today"><div class="subject warmup">warmup</div></div>
-    <div class="cell"><div class="subject warmup">warmup</div></div>
-    <div class="cell"><div class="subject rest">rest</div></div>
-    <div class="cell"><div class="subject warmup">warmup</div></div>
+        <br><br><br><br>
+        <h2 class="section-title">Weekly CCA Timetable</h2>
+        <br>
+        <div class="timetable">
+            <div class="cell time">Time</div>
+            <div class="cell header">Mon</div>
+            <div class="cell header today">Tue</div>
+            <div class="cell header">Wed</div>
+            <div class="cell header">Thu</div>
+            <div class="cell header">Fri</div>
 
-    <div class="cell time">4:00 - 5:00</div>
-    <div class="cell"><div class="subject train">train</div></div>
-    <div class="cell today"><div class="subject friendly">friendly</div></div>
-    <div class="cell"><div class="subject train">train</div></div>
-    <div class="cell"><div class="subject rest">rest</div></div>
-    <div class="cell"><div class="subject intersch">intersch</div></div>
+            <div class="cell time">3:00 - 4:00</div>
+            <div class="cell">
+                <div class="subject warmup">Warmup</div>
+            </div>
+            <div class="cell today">
+                <div class="subject warmup">Warmup</div>
+            </div>
+            <div class="cell">
+                <div class="subject warmup">Warmup</div>
+            </div>
+            <div class="cell">
+                <div class="subject rest">Rest</div>
+            </div>
+            <div class="cell">
+                <div class="subject warmup">Warmup</div>
+            </div>
 
-    <div class="cell time">5:00 - 6:00</div>
-    <div class="cell"><div class="subject train">train</div></div>
-    <div class="cell today"><div class="subject friendly">friendly</div></div>
-    <div class="cell"><div class="subject train">train</div></div>
-    <div class="cell"><div class="subject rest">rest</div></div>
-    <div class="cell"><div class="subject intersch">intersch</div></div>
-  </div>
-<!-- train -->
-<div class="description-content">
-    <div class="description-text">
-        <h3 id="dribble">Dribbling Skillls</h3>
-        <p>Dribbling training focuses on improving ball control, speed, and coordination in various game situations. Players work on using both their dominant and non-dominant hand, practicing moves like crossovers, behind-the-back dribbles, and spin moves to handle defensive pressure. Drills may involve weaving through cones, changing pace, and protecting the ball from defenders. This training helps players maintain control while moving at different speeds and angles, enabling them to break through defenses and set up plays effectively.
+            <div class="cell time">4:00 - 5:00</div>
+            <div class="cell">
+                <div class="subject train">Train</div>
+            </div>
+            <div class="cell today">
+                <div class="subject friendly">Friendly</div>
+            </div>
+            <div class="cell">
+                <div class="subject train">Train</div>
+            </div>
+            <div class="cell">
+                <div class="subject rest">Rest</div>
+            </div>
+            <div class="cell">
+                <div class="subject intersch">Intersch</div>
+            </div>
 
-</p>
-    </div>
-    <div class="description-image">
-        <img src="images/dribble.jpg" width="800" alt="Image 1">
-    </div>
-</div>
+            <div class="cell time">5:00 - 6:00</div>
+            <div class="cell">
+                <div class="subject train">Train</div>
+            </div>
+            <div class="cell today">
+                <div class="subject friendly">Friendly</div>
+            </div>
+            <div class="cell">
+                <div class="subject train">Train</div>
+            </div>
+            <div class="cell">
+                <div class="subject rest">Rest</div>
+            </div>
+            <div class="cell">
+                <div class="subject intersch">Intersch</div>
+            </div>
+        </div>
+        <!-- train -->
+        <div class="description-content">
+            <div class="description-text">
+                <h3 id="dribble">Dribbling Skillls</h3>
+                <p>Dribbling training focuses on improving ball control, speed, and coordination in various game
+                    situations. Players work on using both their dominant and non-dominant hand, practicing moves like
+                    crossovers, behind-the-back dribbles, and spin moves to handle defensive pressure. Drills may
+                    involve weaving through cones, changing pace, and protecting the ball from defenders. This training
+                    helps players maintain control while moving at different speeds and angles, enabling them to break
+                    through defenses and set up plays effectively.
 
-<!-- shooting -->
-<div class="description-content">
-    <div class="description-text">
-        <h3 id="shooting">Shooting Practice</h3>
-        <p>Shooting sessions aim to develop a player’s accuracy, consistency, and confidence when taking shots. Training starts with form shooting to reinforce proper technique, followed by mid-range and long-range shots, layups, and free throws. Players also practice shooting off the dribble, catching and shooting, and finishing under pressure. Game-like drills simulate defenders closing in, helping players adjust their timing and shot selection. This combination of repetition and situational practice ensures readiness to score in real matches.</p>
-    </div>
-    <div class="description-image">
-        <img src="images/shoot.jpg" width="800" alt="Image 1">
-    </div>
-</div>
+                </p>
+            </div>
+            <div class="description-image">
+                <img src="images/dribble.jpg" width="800" alt="Image 1">
+            </div>
+        </div>
 
-<!-- Cardio -->
-<div class="description-content">
-    <div class="description-text">
-        <h3  id="cardio">Cardio & Conditioning</h3>
-        <p>Cardio and conditioning are essential to maintaining peak performance throughout a game. Training often includes sprint intervals, agility ladder drills, and shuttle runs to improve speed and quickness. Endurance exercises such as continuous running, circuit workouts, and plyometric jumps build stamina and explosive power. These sessions also target overall fitness, ensuring players can sustain high-intensity play, recover quickly between plays, and remain effective in both offense and defense from start to finish.</p>
-    </div>
-    <div class="description-image">
-        <img src="images/run.jpg" width="800" alt="Image 1">
-    </div>
-</div>
-<br><br><br>
+        <!-- shooting -->
+        <div class="description-content">
+            <div class="description-text">
+                <h3 id="shooting">Shooting Practice</h3>
+                <p>Shooting sessions aim to develop a player’s accuracy, consistency, and confidence when taking shots.
+                    Training starts with form shooting to reinforce proper technique, followed by mid-range and
+                    long-range shots, layups, and free throws. Players also practice shooting off the dribble, catching
+                    and shooting, and finishing under pressure. Game-like drills simulate defenders closing in, helping
+                    players adjust their timing and shot selection. This combination of repetition and situational
+                    practice ensures readiness to score in real matches.</p>
+            </div>
+            <div class="description-image">
+                <img src="images/shoot.jpg" width="800" alt="Image 1">
+            </div>
+        </div>
 
-  <footer>
-    <br>
-    <table width="80%" border="0" class="tablemiddle">
-        <tbody>
-            <tr valign="top">
-                <td width="25%">
-                    <p><span class="fontgrey">Connect with NYP</span><br><br>
-                        <a href="https://www.nyp.edu.sg/about-nyp" class="fontcolor" target="_blank">About NYP</a>
-                        <a href="https://www.nyp.edu.sg/our-people" class="fontcolor" target="_blank">Our People</a>
-                        <a href="https://www.nyp.edu.sg/media-centre/media-releases" class="fontcolor" target="_blank">Media Centre</a>
-                        <a href="https://sggovterp.wd102.myworkdayjobs.com/PublicServiceCareers?Agency=b98daab97324017495330391d700629c" class="fontcolor" target="_blank">Careers</a>
-                        <a href="https://www.nyp.edu.sg/give" class="fontcolor" target="_blank">Give</a>
-                        <a href="https://www.nyp.edu.sg/visit" class="fontcolor" target="_blank">Visit NYP</a>
-                    </p>
-                </td>
-                <td width="25%">
-                    <span class="fontgrey">Contact</span><br><br>
-                    <a href="https://www.nyp.edu.sg/contact-us/general-enquiries" class="fontcolor" target="_blank">Contact NYP</a>
-                    <a href="https://asknyp.nyp.edu.sg/" class="fontcolor" target="_blank">FAQ</a>
-                </td>
-                <td width="25%">
-                    <span class="fontgrey">Related Links</span><br><br>
-                    <a href="https://www.nyp.edu.sg/sustainability" class="fontcolor" target="_blank">Sustainability@NYP</a>
-                    <a href="https://mynypportal.nyp.edu.sg/" class="fontcolor" target="_blank">Student Portal</a>
-                    <a href="http://library.nyp.edu.sg/" class="fontcolor" target="_blank">Library Portal</a>
-                    <a href="https://adjunctteaching.nyp.edu.sg/" class="fontcolor" target="_blank">Adjunct Staff Portal</a>
-                    <a href="https://www.nypi.edu.sg/" class="fontcolor" target="_blank">NYP International</a>
-                </td>
-                <td width="25%">
-                    <span class="fontgrey">View as</span><br><br>
-                    <a href="https://www.nyp.edu.sg/student" class="fontcolor" target="_blank">Student</a>
-                    <a href="https://www.nyp.edu.sg/adult-learner" class="fontcolor" target="_blank">Adult Learner</a>
-                    <a href="https://www.nyp.edu.sg/alumni" class="fontcolor" target="_blank">Alumni</a>
-                    <a href="https://www.nyp.edu.sg/industry" class="fontcolor" target="_blank">Industry Partner</a>
-                </td>
-            </tr>
-            <tr>
-                <td>&nbsp;</td>
-                <td>&nbsp;</td>
-                <td valign="bottom"><br><br>
-                    <a href="timetable.html" class="fontcolor" target="_blank">Trainings</a>
-                </td>
-                <td valign="bottom">
-                    <a href="achievements.html" class="fontcolor2" target="_blank">Achievements</a>
-                    <a href="leaders.html" class="fontcolor2" target="_blank">Leaders</a>
-                    <a href="Contact Us.html" class="fontcolor2" target="_blank">Contact Us</a>
-                </td>
-            </tr>
-            <tr>
-                <td>&nbsp;</td>
-                <td>&nbsp;</td>
-                <td>&nbsp;</td>
-                <td valign="bottom"><br>
-                    <div>
-                        <a href="https://www.instagram.com/nypbball/?hl=en" class="social" target="_blank"><i class="fab fa-instagram"></i></a>
-                        <a href="https://www.facebook.com/nanyangpoly" class="social" target="_blank"><i class="fab fa-facebook-f"></i></a>
-                        <a href="https://x.com/basketball_sg" class="social" target="_blank"><i class="fab fa-twitter"></i></a>
-                        <a href="https://www.youtube.com/sgbasketball" class="social" target="_blank"><i class="fab fa-youtube"></i></a>
-                    </div>
-                </td>
-            </tr>
-        </tbody>
-    </table>
-    <br>
-    <p class="textyes2">COPYRIGHT © 2025. ALL RIGHTS RESERVED.</p><br>
-    <h2 class="textyes2">Done By Lee Hong You & Asher</h2><br>
-</footer>
+        <!-- Cardio -->
+        <div class="description-content">
+            <div class="description-text">
+                <h3 id="cardio">Cardio & Conditioning</h3>
+                <p>Cardio and conditioning are essential to maintaining peak performance throughout a game. Training
+                    often includes sprint intervals, agility ladder drills, and shuttle runs to improve speed and
+                    quickness. Endurance exercises such as continuous running, circuit workouts, and plyometric jumps
+                    build stamina and explosive power. These sessions also target overall fitness, ensuring players can
+                    sustain high-intensity play, recover quickly between plays, and remain effective in both offense and
+                    defense from start to finish.</p>
+            </div>
+            <div class="description-image">
+                <img src="images/run.jpg" width="800" alt="Image 1">
+            </div>
+        </div>
+        <br><br><br>
 
-</body>
+        <footer>
+            <br>
+            <table width="80%" border="0" class="tablemiddle">
+                <tbody>
+                    <tr valign="top">
+                        <td width="25%">
+                            <p><span class="fontgrey">Connect with NYP</span><br><br>
+                                <a href="https://www.nyp.edu.sg/about-nyp" class="fontcolor" target="_blank">About
+                                    NYP</a>
+                                <a href="https://www.nyp.edu.sg/our-people" class="fontcolor" target="_blank">Our
+                                    People</a>
+                                <a href="https://www.nyp.edu.sg/media-centre/media-releases" class="fontcolor"
+                                    target="_blank">Media Centre</a>
+                                <a href="https://sggovterp.wd102.myworkdayjobs.com/PublicServiceCareers?Agency=b98daab97324017495330391d700629c"
+                                    class="fontcolor" target="_blank">Careers</a>
+                                <a href="https://www.nyp.edu.sg/give" class="fontcolor" target="_blank">Give</a>
+                                <a href="https://www.nyp.edu.sg/visit" class="fontcolor" target="_blank">Visit NYP</a>
+                            </p>
+                        </td>
+                        <td width="25%">
+                            <span class="fontgrey">Contact</span><br><br>
+                            <a href="https://www.nyp.edu.sg/contact-us/general-enquiries" class="fontcolor"
+                                target="_blank">Contact NYP</a>
+                            <a href="https://asknyp.nyp.edu.sg/" class="fontcolor" target="_blank">FAQ</a>
+                        </td>
+                        <td width="25%">
+                            <span class="fontgrey">Related Links</span><br><br>
+                            <a href="https://www.nyp.edu.sg/sustainability" class="fontcolor"
+                                target="_blank">Sustainability@NYP</a>
+                            <a href="https://mynypportal.nyp.edu.sg/" class="fontcolor" target="_blank">Student
+                                Portal</a>
+                            <a href="http://library.nyp.edu.sg/" class="fontcolor" target="_blank">Library Portal</a>
+                            <a href="https://adjunctteaching.nyp.edu.sg/" class="fontcolor" target="_blank">Adjunct
+                                Staff Portal</a>
+                            <a href="https://www.nypi.edu.sg/" class="fontcolor" target="_blank">NYP International</a>
+                        </td>
+                        <td width="25%">
+                            <span class="fontgrey">View as</span><br><br>
+                            <a href="https://www.nyp.edu.sg/student" class="fontcolor" target="_blank">Student</a>
+                            <a href="https://www.nyp.edu.sg/adult-learner" class="fontcolor" target="_blank">Adult
+                                Learner</a>
+                            <a href="https://www.nyp.edu.sg/alumni" class="fontcolor" target="_blank">Alumni</a>
+                            <a href="https://www.nyp.edu.sg/industry" class="fontcolor" target="_blank">Industry
+                                Partner</a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>&nbsp;</td>
+                        <td>&nbsp;</td>
+                        <td valign="bottom"><br><br>
+                            <a href="timetable.html" class="fontcolor" target="_blank">Trainings</a>
+                        </td>
+                        <td valign="bottom">
+                            <a href="achievements.html" class="fontcolor2" target="_blank">Achievements</a>
+                            <a href="leaders.html" class="fontcolor2" target="_blank">Leaders</a>
+                            <a href="Contact Us.html" class="fontcolor2" target="_blank">Contact Us</a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>&nbsp;</td>
+                        <td>&nbsp;</td>
+                        <td>&nbsp;</td>
+                        <td valign="bottom"><br>
+                            <div>
+                                <a href="https://www.instagram.com/nypbball/?hl=en" class="social" target="_blank"><i
+                                        class="fab fa-instagram"></i></a>
+                                <a href="https://www.facebook.com/nanyangpoly" class="social" target="_blank"><i
+                                        class="fab fa-facebook-f"></i></a>
+                                <a href="https://x.com/basketball_sg" class="social" target="_blank"><i
+                                        class="fab fa-twitter"></i></a>
+                                <a href="https://www.youtube.com/sgbasketball" class="social" target="_blank"><i
+                                        class="fab fa-youtube"></i></a>
+                            </div>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+            <br>
+            <p class="textyes2">COPYRIGHT © 2025. ALL RIGHTS RESERVED.</p><br>
+            <h2 class="textyes2">Done By Lee Hong You & Asher</h2><br>
+        </footer>
+
+    </body>
+
 </html>
-    <nav>
-        <a  href="Home.html">
-            Home
-        </a>
-        <a class='current' href="timetable.html">
-            Trainings</a>
+<nav>
+    <a href="Home.html">
+        Home
+    </a>
+    <a class='current' href="timetable.html">
+        Trainings</a>
 
-        <a  href="achievements.html">
-            Achievements
-        </a>
-        <a href="leaders.html">
-            Our Leaders
-        </a>
-        <a href="Contact Us.html">
-            Contact Us
-        </a>
-    </nav>
-        <button onclick="topFunction()" id="myBtn" title="Go to top">&#8593;</button>
-    <script src="script.js">
-        
-    </script>
+    <a href="achievements.html">
+        Achievements
+    </a>
+    <a href="leaders.html">
+        Our Leaders
+    </a>
+    <a href="Contact Us.html">
+        Contact Us
+    </a>
+</nav>
+<button onclick="topFunction()" id="myBtn" title="Go to top">&#8593;</button>
+<script src="script.js">
+
+</script>

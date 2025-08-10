@@ -1,10 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link href="CSS.css" rel="stylesheet">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
   <title>BasketBall | Leaders</title>
   <style>
     body {
@@ -33,7 +34,8 @@
     /* Updated container for 3 columns */
     .container {
       display: grid;
-      grid-template-columns: 1fr auto 1fr; /* carousel | description | poster */
+      grid-template-columns: 1fr auto 1fr;
+      /* carousel | description | poster */
       align-items: center;
       gap: 40px;
       max-width: 1300px;
@@ -81,7 +83,7 @@
     }
 
     .buttons button {
-      background-color: rgba(0,0,0,0.6);
+      background-color: rgba(0, 0, 0, 0.6);
       color: white;
       border: none;
       padding: 10px 20px;
@@ -91,7 +93,7 @@
     }
 
     .buttons button:hover {
-      background-color: rgba(0,0,0,0.8);
+      background-color: rgba(0, 0, 0, 0.8);
     }
 
     /* Middle column description styling */
@@ -128,91 +130,99 @@
     }
   </style>
 </head>
+
 <body>
-<header>
-   <div class="header animate">
-            <div class="logo">
-                <a href="Home.html">
-                    <img class="blackhead" src="images/LOGO_NYP.png" alt="Logo">
-                </a>
-            </div>
-            <div class="login-container">
-                <span class="School">Nanyang Poly Singapore</span>
-                <a class="login-button" href="signup.html"><i class="fas fa-sign-in-alt"></i>  Sign up</a>
-            </div>
-        </div>
-        <div class="line"></div>
-  </div>
-  <h1 class="section-title">Our Team Leaders</h1>
-  <p class="team-intro">
-    Meet the exceptional players who have shaped our basketball legacy.  
-    Their leadership, skill, and dedication have inspired teammates and brought  
-    numerous victories to Nanyang Polytechnic’s basketball program.
-  </p>
-</header>
-
-<div class="container">
-  <!-- Left: Carousel -->
-  <div class="carousel-wrapper">
-    <div class="carousel">
-      <img src="images/lebron portrait.png" class="active" />
-      <img src="images/ad.png" />
-      <img src="images/luka.png" />
+  <header>
+    <div class="header animate">
+      <div class="logo">
+        <a href="Home.html">
+          <img class="blackhead" src="images/LOGO_NYP.png" alt="Logo">
+        </a>
+      </div>
+      <div class="login-container">
+        <span class="School">Nanyang Poly Singapore</span>
+        <a class="login-button" href="signup.html"><i class="fas fa-sign-in-alt"></i> Sign up</a>
+      </div>
     </div>
-    <div class="buttons">
-      <button onclick="changeSlide(-1)">Prev</button>
-      <button onclick="changeSlide(1)">Next</button>
+    <div class="line"></div>
     </div>
-  </div>
+    <h1 class="section-title">Our Team Leaders</h1>
+    <p class="team-intro">
+      Meet the exceptional players who have shaped our basketball legacy.
+      Their leadership, skill, and dedication have inspired teammates and brought
+      numerous victories to Nanyang Polytechnic’s basketball program.
+    </p>
+  </header>
 
-  <!-- Middle: Description -->
-  <div class="middle-column" id="description">
-    This is LeBron Tan, captain of the NYP Titans from 2022–2024. Known for his leadership under pressure, he led the team to three consecutive POL-ITE Championships. His drive, work ethic, and ability to rally the team made him the heartbeat of our dynasty run.
-  </div>
-
-  <!-- Right: Poster -->
-  <div class="right-column">
-    <img src="images/Poster.jpg" alt="Team Leaders">
-  </div>
-</div>
-
-<div class="leaders-extra-info">
-  These leaders have set the standard for teamwork, resilience, and sportsmanship.  
-  Their influence extends beyond the court, fostering a culture of unity and excellence within the team.
-</div>
-
-<div class="cca-description" id="ccaDescription">
-  <h2 class="section-title">About Our Basketball Team</h2>
-  <div class="description-content">
-    <div class="description-text">
-      <h3>Where Passion Meets Purpose</h3>
-      <p>At Nanyang Polytechnic’s Basketball CCA, we believe true success is built on more than just winning games. Our players train hard, compete fiercely, and most importantly, lift each other up — on and off the court.</p>
-
-      <p>Through dedication, resilience, and unity, our team has become a symbol of excellence and sportsmanship. Every practice, every game, and every challenge strengthens our bond and sharpens our skills.</p>
-
-      <h3>Our Core Values:</h3>
-      <ul class="features-list">
-        <li>Teamwork that drives success</li>
-        <li>Resilience in the face of challenges</li>
-        <li>Leadership that inspires others</li>
-        <li>Commitment to sportsmanship</li>
-      </ul>
-
-      <p>Join us, and be part of a legacy where every player contributes to something greater — a team that grows together and inspires beyond the court.</p>
+  <div class="container">
+    <!-- Left: Carousel -->
+    <div class="carousel-wrapper">
+      <div class="carousel">
+        <img src="images/lebron portrait.png" class="active" />
+        <img src="images/ad.png" />
+        <img src="images/luka.png" />
+      </div>
+      <div class="buttons">
+        <button onclick="changeSlide(-1)">Prev</button>
+        <button onclick="changeSlide(1)">Next</button>
+      </div>
     </div>
-    <div class="description-image">
-    <video width="800" height="490" controls>
-      <source src="images/gettyimages-1452774052-640_adpp.mp4" time="video/mp4">
-      </video>
+
+    <!-- Middle: Description -->
+    <div class="middle-column" id="description">
+      This is LeBron Tan, captain of the NYP Titans from 2022–2024. Known for his leadership under pressure, he led the
+      team to three consecutive POL-ITE Championships. His drive, work ethic, and ability to rally the team made him the
+      heartbeat of our dynasty run.
+    </div>
+
+    <!-- Right: Poster -->
+    <div class="right-column">
+      <img src="images/Poster.jpg" alt="Team Leaders">
     </div>
   </div>
-</div>
+
+  <div class="leaders-extra-info">
+    These leaders have set the standard for teamwork, resilience, and sportsmanship.
+    Their influence extends beyond the court, fostering a culture of unity and excellence within the team.
+  </div>
+
+  <div class="cca-description" id="ccaDescription">
+    <h2 class="section-title">About Our Basketball Team</h2>
+    <div class="description-content">
+      <div class="description-text">
+        <h3>Where Passion Meets Purpose</h3>
+        <p>At Nanyang Polytechnic’s Basketball CCA, we believe true success is built on more than just winning games.
+          Our players train hard, compete fiercely, and most importantly, lift each other up — on and off the court.</p>
+
+        <p>Through dedication, resilience, and unity, our team has become a symbol of excellence and sportsmanship.
+          Every practice, every game, and every challenge strengthens our bond and sharpens our skills.</p>
+
+        <h3>Our Core Values:</h3>
+        <ul class="features-list">
+          <li>Teamwork that drives success</li>
+          <li>Resilience in the face of challenges</li>
+          <li>Leadership that inspires others</li>
+          <li>Commitment to sportsmanship</li>
+        </ul>
+
+        <p>Join us, and be part of a legacy where every player contributes to something greater — a team that grows
+          together and inspires beyond the court.</p>
+      </div>
+      <div class="description-image">
+        <video width="800" height="490" controls>
+          <source src="images/gettyimages-1452774052-640_adpp.mp4" time="video/mp4">
+        </video>
+      </div>
+    </div>
+  </div>
   <div class="description-content">
     <div class="description-text" id="2025">
       <h3>NYP Thunderhawks (2025) — Where Speed Meets Strategy</h3>
-      <p>The NYP Thunderhawks are known for their lightning-fast plays and sharp tactical execution. With unmatched agility and precise teamwork, they dominate the court through relentless energy and clever game plans.</p>
+      <p>The NYP Thunderhawks are known for their lightning-fast plays and sharp tactical execution. With unmatched
+        agility and precise teamwork, they dominate the court through relentless energy and clever game plans.</p>
 
-      <p>Every match is a chance to prove that speed and intelligence can outplay even the toughest opponents. Their members push each other to think faster, react quicker, and never lose focus under pressure.</p>
+      <p>Every match is a chance to prove that speed and intelligence can outplay even the toughest opponents. Their
+        members push each other to think faster, react quicker, and never lose focus under pressure.</p>
 
       <h3>Our Core Values:</h3>
       <ul class="features-list">
@@ -224,16 +234,18 @@
 
     </div>
 
-     <div class="description-image">
-            <img src="images/SchoolTeam_Boys.png" width="800" alt="NYP 2022 Champions">
-        </div>
-      </div>
+    <div class="description-image">
+      <img src="images/SchoolTeam_Boys.png" width="800" alt="NYP 2022 Champions">
+    </div>
+  </div>
   <div class="description-content">
     <div class="description-text" id="2024">
       <h3>NYP Iron Titans (2024) — Strength Through Unity</h3>
-      <p>The NYP Iron Titans are a powerhouse of physical dominance and mental resilience. Known for their strong defense and commanding presence, they make every opponent fight for every point.</p>
+      <p>The NYP Iron Titans are a powerhouse of physical dominance and mental resilience. Known for their strong
+        defense and commanding presence, they make every opponent fight for every point.</p>
 
-      <p>Beyond their strength, the Titans are built on unity — every block, rebound, and pass is a team effort. They turn challenges into opportunities to grow stronger, both as individuals and as a squad.</p>
+      <p>Beyond their strength, the Titans are built on unity — every block, rebound, and pass is a team effort. They
+        turn challenges into opportunities to grow stronger, both as individuals and as a squad.</p>
 
       <h3>Our Core Values:</h3>
       <ul class="features-list">
@@ -243,17 +255,19 @@
         <li>Respect for opponents and the game</li>
       </ul>
     </div>
-         <div class="description-image">
-            <img src="images/SchoolTeam_Girls.png" width="800" alt="NYP 2022 Champions">
-        </div>
+    <div class="description-image">
+      <img src="images/SchoolTeam_Girls.png" width="800" alt="NYP 2022 Champions">
+    </div>
   </div>
 
   <div class="description-content">
     <div class="description-text" id="2023">
       <h3>NYP Skyfire (2019)— Playing with Heart and Flair</h3>
-      <p>The NYP Skyfire live for the thrill of the game, dazzling crowds with their explosive offense and creative plays. They bring passion and flair to every match, making basketball a spectacle as much as a sport.</p>
+      <p>The NYP Skyfire live for the thrill of the game, dazzling crowds with their explosive offense and creative
+        plays. They bring passion and flair to every match, making basketball a spectacle as much as a sport.</p>
 
-      <p>For Skyfire, it’s not just about winning — it’s about inspiring others to love the game. Their energy is infectious, their sportsmanship undeniable, and their style unforgettable.</p>
+      <p>For Skyfire, it’s not just about winning — it’s about inspiring others to love the game. Their energy is
+        infectious, their sportsmanship undeniable, and their style unforgettable.</p>
 
       <h3>Our Core Values:</h3>
       <ul class="features-list">
@@ -263,120 +277,127 @@
         <li>Commitment to inspiring future players</li>
       </ul>
     </div>
-         <div class="description-image">
-             <img src="images/2019.jpg" alt="Image 3" width="800">
-        </div>
+    <div class="description-image">
+      <img src="images/2019.jpg" alt="Image 3" width="800">
+    </div>
   </div>
-</div>
-<br><br><br>
-<button onclick="topFunction()" id="myBtn" title="Go to top">&#8593;</button>
-<script src="script.js">
-  const images = document.querySelectorAll(".carousel img");
-  const description = document.getElementById("description");
+  </div>
+  <br><br><br>
+  <button onclick="topFunction()" id="myBtn" title="Go to top">&#8593;</button>
+  <script src="script.js">
+    const images = document.querySelectorAll(".carousel img");
+    const description = document.getElementById("description");
 
-  const descriptions = [
-    // Player 1
-    "This is LeBron Tan, captain of the NYP Titans from 2022–2024. Known for his leadership under pressure, he led the team to three consecutive POL-ITE Championships. His drive, work ethic, and ability to rally the team made him the heartbeat of our dynasty run.",
-    
-    // Player 2
-    "This is Anthony Davis Lim, our defensive anchor and shot-blocking specialist. His versatility allowed him to guard any position, and his clutch defensive stops during the 2023 finals were pivotal to securing back-to-back titles for NYP.",
-    
-    // Player 3
-    "This is Luka Ong, our offensive maestro and playmaking genius. With unmatched vision and deadly 3-point shooting, he controlled the pace of the game and delivered decisive assists that turned close matches into comfortable victories."
-  ];
+    const descriptions = [
+      // Player 1
+      "This is LeBron Tan, captain of the NYP Titans from 2022–2024. Known for his leadership under pressure, he led the team to three consecutive POL-ITE Championships. His drive, work ethic, and ability to rally the team made him the heartbeat of our dynasty run.",
 
-  let currentIndex = 0;
+      // Player 2
+      "This is Anthony Davis Lim, our defensive anchor and shot-blocking specialist. His versatility allowed him to guard any position, and his clutch defensive stops during the 2023 finals were pivotal to securing back-to-back titles for NYP.",
 
-  function showSlide(index) {
-    images.forEach((img, i) => {
-      img.classList.toggle("active", i === index);
-    });
+      // Player 3
+      "This is Luka Ong, our offensive maestro and playmaking genius. With unmatched vision and deadly 3-point shooting, he controlled the pace of the game and delivered decisive assists that turned close matches into comfortable victories."
+    ];
 
-    description.classList.add("fade-out");
-    setTimeout(() => {
-      description.textContent = descriptions[index];
-      description.classList.remove("fade-out");
-    }, 500);
-  }
+    let currentIndex = 0;
 
-  function changeSlide(direction) {
-    currentIndex = (currentIndex + direction + images.length) % images.length;
-    showSlide(currentIndex);
-  }
-</script>
-<nav>
-  <a href="Home.html">Home</a>
-  <a href="timetable.html">Trainings</a>
-  <a href="achievements.html">Achievements</a>
-  <a class='current' href="#">Our Leaders</a>
-  <a href="Contact Us.html">Contact Us</a>
-</nav>
-<footer>
+    function showSlide(index) {
+      images.forEach((img, i) => {
+        img.classList.toggle("active", i === index);
+      });
+
+      description.classList.add("fade-out");
+      setTimeout(() => {
+        description.textContent = descriptions[index];
+        description.classList.remove("fade-out");
+      }, 500);
+    }
+
+    function changeSlide(direction) {
+      currentIndex = (currentIndex + direction + images.length) % images.length;
+      showSlide(currentIndex);
+    }
+  </script>
+  <nav>
+    <a href="Home.html">Home</a>
+    <a href="timetable.html">Trainings</a>
+    <a href="achievements.html">Achievements</a>
+    <a class='current' href="#">Our Leaders</a>
+    <a href="Contact Us.html">Contact Us</a>
+  </nav>
+  <footer>
     <br>
     <table width="80%" border="0" class="tablemiddle">
-        <tbody>
-            <tr valign="top">
-                <td width="25%">
-                    <p><span class="fontgrey">Connect with NYP</span><br><br>
-                        <a href="https://www.nyp.edu.sg/about-nyp" class="fontcolor" target="_blank">About NYP</a>
-                        <a href="https://www.nyp.edu.sg/our-people" class="fontcolor" target="_blank">Our People</a>
-                        <a href="https://www.nyp.edu.sg/media-centre/media-releases" class="fontcolor" target="_blank">Media Centre</a>
-                        <a href="https://sggovterp.wd102.myworkdayjobs.com/PublicServiceCareers?Agency=b98daab97324017495330391d700629c" class="fontcolor" target="_blank">Careers</a>
-                        <a href="https://www.nyp.edu.sg/give" class="fontcolor" target="_blank">Give</a>
-                        <a href="https://www.nyp.edu.sg/visit" class="fontcolor" target="_blank">Visit NYP</a>
-                    </p>
-                </td>
-                <td width="25%">
-                    <span class="fontgrey">Contact</span><br><br>
-                    <a href="https://www.nyp.edu.sg/contact-us/general-enquiries" class="fontcolor" target="_blank">Contact NYP</a>
-                    <a href="https://asknyp.nyp.edu.sg/" class="fontcolor" target="_blank">FAQ</a>
-                </td>
-                <td width="25%">
-                    <span class="fontgrey">Related Links</span><br><br>
-                    <a href="https://www.nyp.edu.sg/sustainability" class="fontcolor" target="_blank">Sustainability@NYP</a>
-                    <a href="https://mynypportal.nyp.edu.sg/" class="fontcolor" target="_blank">Student Portal</a>
-                    <a href="http://library.nyp.edu.sg/" class="fontcolor" target="_blank">Library Portal</a>
-                    <a href="https://adjunctteaching.nyp.edu.sg/" class="fontcolor" target="_blank">Adjunct Staff Portal</a>
-                    <a href="https://www.nypi.edu.sg/" class="fontcolor" target="_blank">NYP International</a>
-                </td>
-                <td width="25%">
-                    <span class="fontgrey">View as</span><br><br>
-                    <a href="https://www.nyp.edu.sg/student" class="fontcolor" target="_blank">Student</a>
-                    <a href="https://www.nyp.edu.sg/adult-learner" class="fontcolor" target="_blank">Adult Learner</a>
-                    <a href="https://www.nyp.edu.sg/alumni" class="fontcolor" target="_blank">Alumni</a>
-                    <a href="https://www.nyp.edu.sg/industry" class="fontcolor" target="_blank">Industry Partner</a>
-                </td>
-            </tr>
-            <tr>
-                <td>&nbsp;</td>
-                <td>&nbsp;</td>
-                <td valign="bottom"><br><br>
-                    <a href="timetable.html" class="fontcolor" target="_blank">Trainings</a>
-                </td>
-                <td valign="bottom">
-                    <a href="achievements.html" class="fontcolor2" target="_blank">Achievements</a>
-                    <a href="leaders.html" class="fontcolor2" target="_blank">Our Leaders</a>
-                    <a href="Contact Us.html" class="fontcolor2" target="_blank">Contact Us</a>
-                </td>
-            </tr>
-            <tr>
-                <td>&nbsp;</td>
-                <td>&nbsp;</td>
-                <td>&nbsp;</td>
-                <td valign="bottom"><br>
-                    <div>
-                        <a href="https://www.instagram.com/nypbball/?hl=en" class="social" target="_blank"><i class="fab fa-instagram"></i></a>
-                        <a href="https://www.facebook.com/nanyangpoly" class="social" target="_blank"><i class="fab fa-facebook-f"></i></a>
-                        <a href="https://x.com/basketball_sg" class="social" target="_blank"><i class="fab fa-twitter"></i></a>
-                        <a href="https://www.youtube.com/sgbasketball" class="social" target="_blank"><i class="fab fa-youtube"></i></a>
-                    </div>
-                </td>
-            </tr>
-        </tbody>
+      <tbody>
+        <tr valign="top">
+          <td width="25%">
+            <p><span class="fontgrey">Connect with NYP</span><br><br>
+              <a href="https://www.nyp.edu.sg/about-nyp" class="fontcolor" target="_blank">About NYP</a>
+              <a href="https://www.nyp.edu.sg/our-people" class="fontcolor" target="_blank">Our People</a>
+              <a href="https://www.nyp.edu.sg/media-centre/media-releases" class="fontcolor" target="_blank">Media
+                Centre</a>
+              <a href="https://sggovterp.wd102.myworkdayjobs.com/PublicServiceCareers?Agency=b98daab97324017495330391d700629c"
+                class="fontcolor" target="_blank">Careers</a>
+              <a href="https://www.nyp.edu.sg/give" class="fontcolor" target="_blank">Give</a>
+              <a href="https://www.nyp.edu.sg/visit" class="fontcolor" target="_blank">Visit NYP</a>
+            </p>
+          </td>
+          <td width="25%">
+            <span class="fontgrey">Contact</span><br><br>
+            <a href="https://www.nyp.edu.sg/contact-us/general-enquiries" class="fontcolor" target="_blank">Contact
+              NYP</a>
+            <a href="https://asknyp.nyp.edu.sg/" class="fontcolor" target="_blank">FAQ</a>
+          </td>
+          <td width="25%">
+            <span class="fontgrey">Related Links</span><br><br>
+            <a href="https://www.nyp.edu.sg/sustainability" class="fontcolor" target="_blank">Sustainability@NYP</a>
+            <a href="https://mynypportal.nyp.edu.sg/" class="fontcolor" target="_blank">Student Portal</a>
+            <a href="http://library.nyp.edu.sg/" class="fontcolor" target="_blank">Library Portal</a>
+            <a href="https://adjunctteaching.nyp.edu.sg/" class="fontcolor" target="_blank">Adjunct Staff Portal</a>
+            <a href="https://www.nypi.edu.sg/" class="fontcolor" target="_blank">NYP International</a>
+          </td>
+          <td width="25%">
+            <span class="fontgrey">View as</span><br><br>
+            <a href="https://www.nyp.edu.sg/student" class="fontcolor" target="_blank">Student</a>
+            <a href="https://www.nyp.edu.sg/adult-learner" class="fontcolor" target="_blank">Adult Learner</a>
+            <a href="https://www.nyp.edu.sg/alumni" class="fontcolor" target="_blank">Alumni</a>
+            <a href="https://www.nyp.edu.sg/industry" class="fontcolor" target="_blank">Industry Partner</a>
+          </td>
+        </tr>
+        <tr>
+          <td>&nbsp;</td>
+          <td>&nbsp;</td>
+          <td valign="bottom"><br><br>
+            <a href="timetable.html" class="fontcolor" target="_blank">Trainings</a>
+          </td>
+          <td valign="bottom">
+            <a href="achievements.html" class="fontcolor2" target="_blank">Achievements</a>
+            <a href="leaders.html" class="fontcolor2" target="_blank">Our Leaders</a>
+            <a href="Contact Us.html" class="fontcolor2" target="_blank">Contact Us</a>
+          </td>
+        </tr>
+        <tr>
+          <td>&nbsp;</td>
+          <td>&nbsp;</td>
+          <td>&nbsp;</td>
+          <td valign="bottom"><br>
+            <div>
+              <a href="https://www.instagram.com/nypbball/?hl=en" class="social" target="_blank"><i
+                  class="fab fa-instagram"></i></a>
+              <a href="https://www.facebook.com/nanyangpoly" class="social" target="_blank"><i
+                  class="fab fa-facebook-f"></i></a>
+              <a href="https://x.com/basketball_sg" class="social" target="_blank"><i class="fab fa-twitter"></i></a>
+              <a href="https://www.youtube.com/sgbasketball" class="social" target="_blank"><i
+                  class="fab fa-youtube"></i></a>
+            </div>
+          </td>
+        </tr>
+      </tbody>
     </table>
     <br>
     <p class="textyes2">COPYRIGHT © 2025. ALL RIGHTS RESERVED.</p><br>
     <h2 class="textyes2">Done By Lee Hong You & Asher</h2><br>
-</footer>
+  </footer>
 </body>
+
 </html>
