@@ -151,18 +151,7 @@
     <p class="textyes2">COPYRIGHT © 2025. ALL RIGHTS RESERVED.</p><br>
     <h2 class="textyes2">Done By Lee Hong You & Asher</h2><br>
 </footer>
+<script src="script.js"></script>
 
-    <!-- Scroll Animation Script -->
-    <script src="script.js">
-        const observer = new IntersectionObserver((entries) => {
-            entries.forEach(entry => {
-                if (entry.isIntersecting) {
-                    entry.target.classList.add('show');
-                }
-            });
-        }, { threshold: 0.2 });
-
-        document.querySelectorAll('.animate').forEach(el => observer.observe(el));
-    </script>
 </body>
 </html>
