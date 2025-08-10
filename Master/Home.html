@@ -166,7 +166,7 @@
             <h1>Our Leaders</h1>
             <br>
             <div class="image-row">
-                <a href="leaders.html" class="links">
+                <a href="leaders.html#2025" class="links">
                     <div class="image-item">
                         <img src="images/new3.jpg" alt="Image 1">
                         <h3>School Team 2025</h3>
@@ -175,7 +175,7 @@
                         <p class="bold">Led by Captain Darren, this team made it to IVP semis.</p>
                 </a>
             </div>
-            <a href="leaders.html" class="links">
+            <a href="leaders.html#2024" class="links">
                 <div class="image-item">
                     <img src="images/team4.png" alt="Image 2">
                     <h3>School Team 2024</h3>
@@ -184,7 +184,7 @@
                     <p class="bold">Known for strong teamwork and fast breaks.</p>
             </a>
         </div>
-        <a href="leaders.html" class="links">
+        <a href="leaders.html#2023" class="links">
             <div class="image-item">
                 <img src="images/team4.png" alt="Image 3">
                 <h3>School Team 2023</h3>
@@ -282,33 +282,10 @@
         <a href="Contact Us.html">
             Contact Us
         </a>
+  <button onclick="topFunction()" id="myBtn" title="Go to top">&#8593;</button>
     </nav>
-    <script>
-        const images = [
-            "Images/wallpaperflare.com_wallpaper.jpg",
-            "images/ball1.jpg",
-            "images/ball2.jpg"
-        ];
+<script src="script.js"></script>
 
-        const slides = document.querySelector(".slides");
-        const totalImages = document.querySelectorAll(".slides img").length;
-        let index = 0;
-
-        setInterval(() => {
-            index = (index + 1) % totalImages;
-            slides.style.transform = `translateX(-${index * 100}%)`;
-        }, 5000);
-        const observer = new IntersectionObserver((entries) => {
-            entries.forEach(entry => {
-                if (entry.isIntersecting) {
-                    entry.target.classList.add('show');
-                }
-            });
-        }, { threshold: 0.2 });
-
-        document.querySelectorAll('.animate').forEach(el => observer.observe(el));
-    </script>
-    </script>
 </body>
 
 </html>

@@ -35,7 +35,7 @@
         <a href="leaders.html">Our Leaders</a>
         <a class="current" href="Contact Us.html">Contact Us</a>
     </nav>
-
+<button onclick="topFunction()" id="myBtn" title="Go to top">&#8593;</button>
     <!-- Contact Section -->
     <section class="contact-section animate">
         <h1 class="events">Get in Touch</h1>
@@ -153,7 +153,7 @@
 </footer>
 
     <!-- Scroll Animation Script -->
-    <script>
+    <script src="script.js">
         const observer = new IntersectionObserver((entries) => {
             entries.forEach(entry => {
                 if (entry.isIntersecting) {

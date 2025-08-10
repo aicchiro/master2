@@ -174,41 +174,6 @@
     <h2 class="textyes2">Done By Lee Hong You & Asher</h2><br>
 </footer>
 <button onclick="topFunction()" id="myBtn" title="Go to top">&#8593;</button>
-<script>
-let mybutton = document.getElementById("myBtn");
-
-window.onscroll = function() {scrollFunction()};
-
-function fadeInOnScroll() {
-            const ccaDescription = document.getElementById('ccaDescription');
-            const elementTop = ccaDescription.getBoundingClientRect().top;
-            const elementVisible = 150;
-
-            if (elementTop < window.innerHeight - elementVisible) {
-                ccaDescription.classList.add('fade-in');
-            }
-        }
-
-function scrollFunction() {
-  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-    mybutton.style.display = "block";
-  } else {
-    mybutton.style.display = "none";
-  }
-}
-function topFunction() {
-  document.body.scrollTop = 0;
-  document.documentElement.scrollTop = 0;
-}
-
-let slideIndex = 0;
-  const slides = document.getElementById('slides');
-  const totalSlides = slides.children.length;
-
-  function moveSlide(direction) {
-    slideIndex = (slideIndex + direction + totalSlides) % totalSlides;
-    slides.style.transform = `translateX(-${slideIndex * 100}%)`;
-  }
-</script>
+<script src="script.js"></script>
 </body>
 </html>
